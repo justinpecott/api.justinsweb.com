@@ -1,0 +1,19 @@
+meta {
+  name: echo
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base_url}}/{{stage}}/echo
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {"message": "is this thing on?"}
+}
+
+settings {
+  encodeUrl: true
+}
