@@ -1,0 +1,42 @@
+openapi: "3.0.1"
+info:
+  title: "JustinsWeb."
+  description: "API access to justinsweb.com"
+  version: "2025-02-11T23:15:35Z"
+servers:
+- url: "https://api.justinsweb.com/{basePath}"
+  variables:
+    basePath:
+      default: "prod"
+paths:
+  /echo:
+    post:
+      responses:
+        "200":
+          description: "200 response"
+          content: {}
+      security:
+      - JustinsWeb.Cognito:
+        - "jw/admin"
+        - "jw/developer"
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:486694442534:function:justinsweb_api_echo:${stageVariables.lambdaAlias}/invocations"
+        httpMethod: "POST"
+        responses:
+          default:
+            statusCode: "200"
+        passthroughBehavior: "when_no_match"
+        timeoutInMillis: 29000
+        contentHandling: "CONVERT_TO_TEXT"
+        type: "aws_proxy"
+components:
+  securitySchemes:
+    JustinsWeb.Cognito:
+      type: "apiKey"
+      name: "Authorization"
+      in: "header"
+      x-amazon-apigateway-authtype: "cognito_user_pools"
+      x-amazon-apigateway-authorizer:
+        providerARNs:
+        - "arn:aws:cognito-idp:us-west-2:486694442534:userpool/us-west-2_HqmIkc3Xd"
+        type: "cognito_user_pools"
