@@ -1,7 +1,2 @@
 # Ignore *.env file
-.env
-.env.local
-.env.development
-.env.test
-.env.production
-.env.*.local
+*.env
