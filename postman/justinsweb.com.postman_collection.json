@@ -1,0 +1,137 @@
+{
+  "info": {
+    "_postman_id": "670e773d-9d77-472c-817b-694cc9ca3850",
+    "name": "justinsweb.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "19409548"
+  },
+  "item": [
+    {
+      "name": "test",
+      "item": [
+        {
+          "name": "echo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"message\": \"is this thing on?\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/{{stage}}/echo",
+              "host": ["{{base_url}}"],
+              "path": ["{{stage}}", "echo"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "accessTokenUrl",
+        "value": "{{access_token_url}}",
+        "type": "string"
+      },
+      {
+        "key": "authUrl",
+        "value": "{{authorization_url}}",
+        "type": "string"
+      },
+      {
+        "key": "scope",
+        "value": "{{scope}}",
+        "type": "string"
+      },
+      {
+        "key": "clientSecret",
+        "value": "{{client_secret}}",
+        "type": "string"
+      },
+      {
+        "key": "clientId",
+        "value": "{{client_id}}",
+        "type": "string"
+      },
+      {
+        "key": "redirect_uri",
+        "value": "{{callback_url}}",
+        "type": "string"
+      },
+      {
+        "key": "addTokenTo",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "callback_url",
+      "value": "https://oauth.pstmn.io/v1/browser-callback",
+      "type": "string"
+    },
+    {
+      "key": "client_id",
+      "value": "OBFUSCATED_CLIENT_ID",
+      "type": "string"
+    },
+    {
+      "key": "client_secret",
+      "value": "OBFUSCATED_CLIENT_SECRET",
+      "type": "string"
+    },
+    {
+      "key": "scope",
+      "value": "jw/admin",
+      "type": "string"
+    },
+    {
+      "key": "authorization_url",
+      "value": "https://cognito.justinsweb.com/oauth2/authorize",
+      "type": "string"
+    },
+    {
+      "key": "access_token_url",
+      "value": "https://cognito.justinsweb.com/oauth2/token",
+      "type": "string"
+    },
+    {
+      "key": "base_url",
+      "value": "https://api.justinsweb.com",
+      "type": "string"
+    },
+    {
+      "key": "stage",
+      "value": "prod",
+      "type": "string"
+    }
+  ]
+}
