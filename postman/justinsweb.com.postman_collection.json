@@ -25,8 +25,13 @@
             },
             "url": {
               "raw": "{{base_url}}/{{stage}}/echo",
-              "host": ["{{base_url}}"],
-              "path": ["{{stage}}", "echo"]
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "{{stage}}",
+                "echo"
+              ]
             }
           },
           "response": []
@@ -80,7 +85,9 @@
       "script": {
         "type": "text/javascript",
         "packages": {},
-        "exec": [""]
+        "exec": [
+          ""
+        ]
       }
     },
     {
@@ -88,7 +95,9 @@
       "script": {
         "type": "text/javascript",
         "packages": {},
-        "exec": [""]
+        "exec": [
+          ""
+        ]
       }
     }
   ],
