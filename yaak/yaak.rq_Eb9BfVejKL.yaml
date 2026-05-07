@@ -1,0 +1,23 @@
+type: http_request
+model: http_request
+id: rq_Eb9BfVejKL
+createdAt: 2026-05-07T01:10:21.825319
+updatedAt: 2026-05-07T01:18:32.418251
+workspaceId: wk_DqnBofhLCp
+folderId: null
+authentication: {}
+authenticationType: null
+body:
+  text: '{"message": "is this thing on?"}'
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: m23FZT9Em5
+method: POST
+name: ''
+sortPriority: -1778116221824.0
+url: ${[ base_url ]}/${[ stage ]}/echo
+urlParameters: []

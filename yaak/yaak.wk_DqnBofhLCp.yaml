@@ -1,0 +1,21 @@
+type: workspace
+model: workspace
+id: wk_DqnBofhLCp
+createdAt: 2026-05-07T01:09:35.212893
+updatedAt: 2026-05-07T01:31:17.669435
+authentication:
+  accessTokenUrl: ${[ access_token_url ]}
+  authorizationUrl: ${[ authorization_url ]}
+  clientId: ${[ client_id ]}
+  clientSecret: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RUhpWmQ5VXU2aHB0RVJ6b014TG5ZVkJBQ0ZMeTVnblNmSkFkR0FDL1l2eTR1WS9xOGF5MEg5cE9QeGl6QmI5SUFQOXV1emlwQUt2bTh1b01NPQ') ]}
+  redirectUri: ${[ redirect_url ]}
+  scope: ${[ scope ]}
+authenticationType: oauth2
+description: ''
+headers: []
+name: ''
+encryptionKeyChallenge: eUE0azNuQwEbtVA94rbH6ksNosYaBwZAElpGoZSBx8T7ewAIzHQcZprWKXDuye+yBqKfv4drQR2Lu1Pf9DQdZ9oSuSuu+XHA9OD5OMJ9dWFSCrF9CWvhxYtFNQZbhnJHA48=
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0
+settingDnsOverrides: []

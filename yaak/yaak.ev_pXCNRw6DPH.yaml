@@ -1,0 +1,30 @@
+type: environment
+model: environment
+id: ev_pXCNRw6DPH
+workspaceId: wk_DqnBofhLCp
+createdAt: 2026-05-07T01:19:19.924179
+updatedAt: 2026-05-07T01:23:02.387640
+name: prod
+public: true
+base: false
+parentModel: environment
+parentId: null
+variables:
+- enabled: true
+  name: stage
+  value: prod
+  id: HjQFbWzYBF
+- enabled: true
+  name: scope
+  value: jw/admin
+  id: YZBA2kJu5y
+- enabled: true
+  name: client_id
+  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3R05HTHRMN1FiUE50bXgya3prM3FQSUFpQ0FoNVFCWmpIUWxCY2JIeGs0cHJRK2crZnc4SDBEV2FvRUNjRXNxZjFmcE94MjdKemNINzdKb2JuRndRZjhKKzQ9') ]}
+  id: 7XK5gEfipJ
+- enabled: true
+  name: client_secret
+  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3SHhTRnd6d1BqTHhoYkE2MTNKdWswdVlVdDdZNDROaDN2eUU4Y0tyQStTeWdkNkU3ZXpXSkdSODZjTmxXeVgrTjRaL2d2SFJEVnpaZEk3bDlQZnlhQ0pKakhoUVFBcmNndWtrNEdpcHF4STd4VUN4ZGl1Wks3OEtEQUh2Zz09') ]}
+  id: 3BfUDEKw79
+color: var(--danger)
+sortPriority: 0.0

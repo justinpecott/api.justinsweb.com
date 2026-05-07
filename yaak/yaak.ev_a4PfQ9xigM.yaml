@@ -1,0 +1,30 @@
+type: environment
+model: environment
+id: ev_a4PfQ9xigM
+workspaceId: wk_DqnBofhLCp
+createdAt: 2026-05-07T01:09:59.251231
+updatedAt: 2026-05-07T01:31:08.905655
+name: Global Variables
+public: true
+base: true
+parentModel: workspace
+parentId: null
+variables:
+- enabled: true
+  name: base_url
+  value: https://api.justinsweb.com
+  id: tqERnEyBDw
+- enabled: true
+  name: authorization_url
+  value: https://cognito.justinsweb.com/oauth2/authorize
+  id: J9QrhibgtY
+- enabled: true
+  name: access_token_url
+  value: https://cognito.justinsweb.com/oauth2/token
+  id: aJShHee3X9
+- enabled: true
+  name: redirect_url
+  value: http://localhost:8080/cb
+  id: jVMNUWw9B4
+color: null
+sortPriority: 0.0
